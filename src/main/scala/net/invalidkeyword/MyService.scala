@@ -33,7 +33,7 @@ trait MyService extends HttpService {
   )
 
   def services = {
-    "\"services\":[" + data.map(s => "{\"id\":\"" + s.name + "\", \"healthy\":\"" + (math.random< 0.25) + "\", \"value\": { \"label\":\"" + s.name +  "\" }}").mkString(",") + "]"
+    "\"services\":[" + data.map(s => "{\"id\":\"" + s.name + "\", \"healthy\":\"" + (math.random > 0.25) + "\", \"value\": { \"label\":\"" + s.name +  "\" }}").mkString(",") + "]"
   }
 
   def edges = {

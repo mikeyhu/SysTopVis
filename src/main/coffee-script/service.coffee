@@ -11,6 +11,9 @@ window.draw = (data)->
 		console.log "h:#{h} isHealthy:#{isHealthy} res:#{res}"
 		res
 
+	svg = d3.select("svg > g")
+	svg.selectAll("*").remove()
+
 	renderer = new dagreD3.Renderer()
 	oldDrawNodes = renderer.drawNodes()
 	renderer.drawNodes (graph, root)->
