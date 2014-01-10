@@ -1,0 +1,21 @@
+{
+  "name": "SysTopVis",
+  "version": "0.0.1",
+  "author": "Mike Hughes",
+  "dependencies": {
+    "coffee-script": "1.6.x"
+  },
+  "devDependencies": {
+    "chai": "1.5.x",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt-exec": "~0.4.0",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-clean": "~0.4.1"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
