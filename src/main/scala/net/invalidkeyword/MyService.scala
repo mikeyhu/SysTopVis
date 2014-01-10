@@ -26,10 +26,26 @@ trait MyService extends HttpService {
   val data :List[Service] = List(
     Service("Core",List(
       Depends("Identity","a label"),
-      Depends("User-Service")
+      Depends("SIM-User"),
+      Depends("MarkLogic"),
+      Depends("Track"),
+      Depends("Token")
     )),
-    Service("Identity"),
-    Service("User-Service")
+    Service("Identity", List(
+      Depends("MySQL")
+    )),
+    Service("SIM-User", List(
+      Depends("MySQL")
+    )),
+    Service("MySQL"),
+    Service("MarkLogic"),
+    Service("Track",List(
+      Depends("Cassandra")
+    )),
+    Service("Cassandra"),
+    Service("Token",List(
+      Depends("SIM-User")
+    ))
   )
 
   def services = {
