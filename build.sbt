@@ -1,4 +1,4 @@
-organization  := "com.example"
+organization  := "net.invalidkeyword"
 
 version       := "0.1"
 

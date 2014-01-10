@@ -8,7 +8,7 @@ module.exports = (grunt)->
 				options:
 					join: true
 				files:
-					"src/resources/scripts/all.js": ["src/client/*.coffee"]
+					"src/main/resources/static/scripts/all.js": ["src/main/coffee-script/*.coffee"]
 
 		simplemocha:
 			client:
